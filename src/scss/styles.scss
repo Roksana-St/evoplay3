@@ -1,5 +1,13 @@
+@import 'modern-normalize';
 @import './header.scss';
-@import './vite-promo.scss';
+@import './gallery.scss';
+@import './faq.scss';
+@import './play.scss';
+@import './about.scss';
+@import './features.scss';
+@import './footer.scss';
+@import './page2.scss';
+@import './page3.scss';
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
