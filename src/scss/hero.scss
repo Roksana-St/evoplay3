@@ -8,6 +8,8 @@
   background-repeat: no-repeat;
 
   @include media(desktop) {
+    padding-top: 180px;
+
     height: 800px;
     width: 1200px;
     background-image: url(../img/header/header.jpg);
@@ -31,26 +33,53 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
+  width: 268px;
+  gap: 8px;
+
+  @include media(desktop) {
+    width: 1084px;
+    justify-content: flex-start;
+    height: 188px;
+  }
 }
 
 //title and desc
 .desc-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 8px;
   width: 268px;
+  height: 100%;
+  justify-content: space-between;
+
+  @include media(desktop) {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+  }
 }
+
 .hero-title {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.33333;
+
+  @include media(desktop) {
+    font-weight: 500;
+    font-size: 64px;
+  }
 }
 
 .hero-desc {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
+
+  @include media(desktop) {
+    font-weight: 400;
+    font-size: 24px;
+    width: 532px;
+  }
 }
 
 //google link
@@ -62,6 +91,9 @@
   padding: 8px 12px;
   display: flex;
   gap: 10px;
+
+  @include media(desktop) {
+  }
 }
 
 .get-it {

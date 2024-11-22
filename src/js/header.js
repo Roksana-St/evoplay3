@@ -9,3 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     backdrop.classList.toggle('is-open');
   });
 });
+
+mobileMenu.addEventListener('click', () => {
+  const isBurgerMenuOpen = burgerMenu.classList.contains('is-open');
+  const isMobileMenuOpen = mobileMenu.classList.contains('is-open');
+  const isBackdropOpen = backdrop.classList.contains('is-open');
+
+  if ((isBurgerMenuOpen, isMobileMenuOpen, isBackdropOpen)) {
+    burgerMenu.classList.remove('is-open');
+    mobileMenu.classList.remove('is-open');
+    backdrop.classList.remove('is-open');
+  }
+});

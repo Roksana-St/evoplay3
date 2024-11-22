@@ -57,11 +57,12 @@
     align-items: center;
     justify-content: flex-end;
     gap: 26px;
-    width: 100%;
   }
 }
 
 .nav-link {
+  position: relative;
+
   @include media(desktop) {
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -69,12 +70,28 @@
     color: $_main_color;
     font-size: 16px;
   }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: $_main_color;
+    transition: width 0.4s ease-in-out;
+  }
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: $_header_accent_color;
+  color: $_main_color;
+
+  &::after {
+    width: 100%;
+  }
 }
+
 //mobil menu
 
 .burger-container {
