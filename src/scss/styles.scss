@@ -1,5 +1,6 @@
 @import 'modern-normalize';
 @import './header.scss';
+@import './hero.scss';
 @import './gallery.scss';
 @import './faq.scss';
 @import './play.scss';
@@ -8,6 +9,7 @@
 @import './footer.scss';
 @import './page2.scss';
 @import './page3.scss';
+@import './fonts.scss';
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
