@@ -1,0 +1,79 @@
+// section
+.bg-image {
+  height: 380px;
+  padding-top: 80px;
+  padding-bottom: 48px;
+  background-image: url(../img/header/heroMobil.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include media(desktop) {
+    height: 800px;
+    width: 1200px;
+    background-image: url(../img/header/header.jpg);
+    background-size: cover;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .bg-image {
+    background-image: url(../img/header/heroMobil@2x.png);
+
+    @include media(desktop) {
+      background-image: url(../img/header/header@2x.jpg);
+    }
+  }
+}
+
+// main container
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+//title and desc
+.desc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 268px;
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.33333;
+}
+
+.hero-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+}
+
+//google link
+.google-link {
+  width: 164px;
+  height: 48px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.get-it {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.google-play {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-transform: capitalize;
+}
