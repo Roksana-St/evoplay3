@@ -1,0 +1,60 @@
+.back-icon {
+  width: 24px;
+  height: 12px;
+}
+.icon-link {
+  padding: 6px;
+}
+.back-div {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.back-p {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.privacy-title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.privacy-text {
+  margin-top: 8px;
+}
+.privacy-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 16px;
+}
+.privacy-list li::marker {
+  font-size: 10px;
+}
+.privacy-text:last-of-type {
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .privacy-title {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .privacy-text {
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .privacy-list {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .privacy-list li::marker {
+    font-size: 13px;
+  }
+  .privacy-text:last-of-type {
+    padding-bottom: 40px;
+  }
+}

@@ -1,5 +1,5 @@
 .footer {
-  width: 320px;
+  width: 100%;
   height: 160px;
   background: #5d8230;
 }
@@ -18,6 +18,7 @@
   margin-bottom: 4px;
 }
 .footer-link {
+  padding: 2px;
 }
 .footer-p {
   font-size: 12px;
@@ -25,4 +26,41 @@
   text-align: center;
   color: #fff;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    height: 188px;
+  }
+  .footer-nav {
+    padding-top: 40px;
+  }
+  .footer-list {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+  .footer-item {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 0;
+  }
+  .footer-p {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 0;
+    text-align: none;
+    padding-top: 40px;
+  }
+  .footer-link {
+    padding: 4px;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 55px;
+  }
 }
