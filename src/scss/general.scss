@@ -31,16 +31,10 @@ h6 {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
-    padding-left: 29px;
-    padding-right: 29px;
+    padding-left: 58px;
+    padding-right: 58px;
   }
 
   .section {
