@@ -1,0 +1,48 @@
+.features-section {
+  @include media(desktop) {
+    background-image: url(../img/puzzle/green.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: bottom 140px left 110px;
+  }
+}
+
+.features-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+
+  @include media(desktop) {
+    padding-bottom: 40px;
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 68px;
+  }
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  width: 284px;
+  padding: 8px;
+
+  @include media(desktop) {
+    gap: 34px;
+    align-items: flex-start;
+    padding: 16px;
+  }
+}

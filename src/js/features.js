@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   listItems.forEach((item, index) => {
     item.style.border = `2px solid ${colors[index]}`;
-    item.style.padding = '8px';
     item.style.borderRadius = '8px';
 
     const icon = item.querySelector('.features-icons');
