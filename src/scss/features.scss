@@ -18,6 +18,13 @@
   }
 }
 
+.features-main-title {
+  font-family: 'Solway', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 .features-list {
   display: flex;
   flex-direction: column;
@@ -52,6 +59,9 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
+  @include media(desktop) {
+    font-size: 20px;
+  }
 }
 
 .features-desc {
@@ -59,4 +69,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
