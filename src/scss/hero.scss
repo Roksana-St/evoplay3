@@ -85,21 +85,27 @@
 
 //google link
 .google-link {
-  width: 164px;
+  width: 166px;
   height: 48px;
   background-color: white;
   border-radius: 8px;
-  padding: 8px 10px;
+  padding: 6px 10px;
   display: flex;
   gap: 2px;
+  transition: border 0.3s ease;
+
+  &:hover {
+    border: 1px solid #141414;
+  }
 
   @include media(desktop) {
   }
 }
+
 @supports (-webkit-touch-callout: none) {
   .google-link {
     width: 170px;
-    padding: 8px 4px;
+    padding: 6px 4px;
   }
 }
 
