@@ -6,15 +6,16 @@
   background-image: url(../img/header/heroMobil.png);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 20px;
 
   @include media(desktop) {
     padding-top: 180px;
-
     height: 800px;
-    width: 1200px;
+    width: 100%;
     background-image: url(../img/header/header.jpg);
     background-size: cover;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -88,24 +89,39 @@
   height: 48px;
   background-color: white;
   border-radius: 8px;
-  padding: 8px 12px;
+  padding: 8px 10px;
   display: flex;
-  gap: 10px;
+  gap: 2px;
 
   @include media(desktop) {
   }
 }
+@supports (-webkit-touch-callout: none) {
+  .google-link {
+    width: 170px;
+    padding: 8px 4px;
+  }
+}
 
 .get-it {
+  font-family: 'Poppins', sans-serif;
+
   font-size: 10px;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
 }
 
 .google-play {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  font-size: 14px;
   text-transform: capitalize;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
 }
