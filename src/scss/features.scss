@@ -7,6 +7,12 @@
   }
 }
 
+@media screen and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url(../img/puzzle/green@2x.png);
+  }
+}
+
 .features-main-container {
   display: flex;
   flex-direction: column;
