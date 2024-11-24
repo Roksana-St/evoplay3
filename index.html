@@ -8,7 +8,9 @@
   <title>Farm Sort Puzzle</title>
   
   <script type="module" crossorigin src="/evoplay3/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/evoplay3/assets/styles-99532edd.css">
+  <link rel="modulepreload" crossorigin href="/evoplay3/assets/vendor-aaa28e29.js">
+  <link rel="stylesheet" href="/evoplay3/assets/vendor-32cb4d39.css">
+  <link rel="stylesheet" href="/evoplay3/assets/styles-45eda0f6.css">
 </head>
 
 <body>
@@ -17,8 +19,8 @@
     <a href="" class="link-logo">
       <img
         class="logo"
-        src="../img/header/logo.jpg"
-        srcset="../img/header/logo.jpg 1x, ../img/header/logo@2x.jpg 2x"
+        src="/evoplay3/assets/logo-4ada2e1f.jpg"
+        srcset="/evoplay3/assets/logo-4ada2e1f.jpg 1x, /evoplay3/assets/logo@2x-7e644573.jpg 2x"
         alt="Farm Sort Puzzle Logo"
       />Farm Sort Puzzle
     </a>
@@ -34,7 +36,7 @@
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#faq" class="nav-link">FAQ</a></li>
         <li><a href="#how-to-play" class="nav-link">How to Play</a></li>
-        <li><a href="about-the-game" class="nav-link">About the Game</a></li>
+        <li><a href="#about-the-game" class="nav-link">About the Game</a></li>
         <li><a href="#features" class="nav-link">Features</a></li>
       </ul>
     </div>
@@ -43,7 +45,7 @@
       <li><a href="#gallery" class="nav-link">Gallery</a></li>
       <li><a href="#faq" class="nav-link">FAQ</a></li>
       <li><a href="#how-to-play" class="nav-link">How to Play</a></li>
-      <li><a href="about-the-game" class="nav-link">About the Game</a></li>
+      <li><a href="#about-the-game" class="nav-link">About the Game</a></li>
       <li><a href="#features" class="nav-link">Features</a></li>
     </ul>
   </nav>
@@ -60,7 +62,7 @@
         href="https://play.google.com/store/apps/details?id=com.farm.sort"
         target="_blank"
         rel="noopener"
-        ><img src="../img/header/google.svg" alt="google link" />
+        ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAgCAYAAADud3N8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARvSURBVHgBvVZNaFxVFP7Oe4+Y1JbMLCtCq7gyGzWiKAoFqwtXWUi307jpsgr+LJsRF6VdNHUhTATfdJnooiJFSWrzhCoibWdhUYS2mRSdCSntTErTpJC5p+f+zgsNIU2TnOHNffe+O/e73/m+e+YRWiOFOF4e6nRUG8UTZ7EDQfhvIaVdaYmjBhGjzuAyiier2MYg3OQZipf3cV+FKGqwGQNlzDSM4vE6tiGIBFRg9gNLwK4xIG4aWDDLQ6oqReWtBo/AZn2w6gPuH2Hu7JU+m4fSHCZSNSx8dgxbGIRZSS80U8DkloTx0xWwMCY35HJel81sid5EAgoLKh6yiQUtA7srxHHDTTLkyWxCfhErGl4pHs+wyfCg+9yi8OAsGtOeCpA04Zi6xnzLdD4DFW9Kb5KkGaZ5QLO8voMw7hfGSUMG3Qxw7ltMsQmzRYRgVmNY19pVVS/QOsK08ozdQwCzW9DsJbTZpqOFz49uFJRIM2VrJIOtZEy59eVe+qBomdE/Ttz7txMdgXe+Kzd1bMBskWHmmGoQCkfIpJnNaiu9hFsl0L1BBOUdGsPvQ7On/aPzWcp/0jTXApFHQU2a2FzmY5jpvrKbkEtvwG7k9iHg7iuBpU6vcxZpYdL/z/HRO5f0Hg7I72a4FqVrgUdd/UwqLVPlc93V1wBo8PlD4LuDcHYLtNObP1GpdTV3tHU15RISmuF/cExELHSZcpeJvyerp2dvq0PHstbA1BTGrUHvP6Sz51C68xfslmmV4CYUjeAB1fhfDNm8XHNGUrDHRFkHO/YWUKe9Y5ZkAYfLCGPvBKULX0IYshRUQiyTE3kSSdZjQY5lTqzHAXe1ZM7zEax2FtCdUeIwBgHTLG2/454rM07pqVmUzt92lSyUELKMV4WnUdSdJBQCdscjpyH82fXMOABzdeIElS5PAZdeJOOMV+fy9YqC1bqea8lvP6QX0E5g9fQM7a67ztXmMWfXO1nPSMdPWkAf3w/YavHaHOfA2IJTW9pR9OA0PYd2YEoIWob0acBQHNyx0e23EwJ4Zcovql1h6Xw3YHV9fY4DY4qqWFFlelmKRi6ScFxyWnoA5FpYQBy+POkLBOULhemPD4ir+wjv38hkfpkGOcMaQbjq3NtxWuZAfDoLi4s49cPXKF2Z7FZBDaiUeb2wf3pmuC76DtPF82uCBabkXOqPiHZrOCaSgeL9e3Sh8ilealzjwFD/u2q9oohcBdFanabfp0awgfDp5WAcDjpqQFyofCKA1+1s/x7j663tfoGe3aOUnW1jg5F4p3Ku1mr2/YsCOCYMmzewCsgH41c8lQxT9nMdjxmJY8U5QC7olI4Fhnl2Wr8MHS7TH+vrti4oddzbptPTAj7CUEdbjsBH9NvkGTxhJKEKSVtYkpR+Y0yTmyKVBPTV4+q2Lqj/ZxGGmNYubV7PA1bRs+fjrQILoJphcWmRxaUkGroziEyuMl38JcN2xLM/zo/WPpA3+zcPyvXuDL918AB2IviNd4b47feGsEPxEBIMr/SyZ+fUAAAAAElFTkSuQmCC" alt="google link" />
         <span class="get-it"
           >get it on<span class="google-play">Google Play</span></span
         ></a
@@ -73,7 +75,79 @@
   </div>
 </section>
 
-    
+    <section class="gallery section" id="gallery">
+  <div class="container-wrapper container">
+    <div class="container-gallery-title">
+      <h2 class="gallery-title">Gallery</h2>
+      <div class="arrow-container">
+        <button
+          class="button-prev button-prev-svg"
+          type="button"
+          aria-label="Previous comment"
+        >
+          <svg class="arrow-swiper" width="24" height="24">
+            <use xlink:href="/evoplay3/assets/sprite-6879aedd.svg#icon-left" />
+          </svg>
+        </button>
+
+        <button
+          class="button-next button-next-svg"
+          type="button"
+          aria-label="Next comment"
+        >
+          <svg class="arrow-swiper" width="24" height="24">
+            <use xlink:href="/evoplay3/assets/sprite-6879aedd.svg#icon-right" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- <div class=""> -->
+    <div class="swiper swiper-one">
+      <ul class="gallery-list swiper-wrapper">
+        <li class="swiper-slide gallery-list-item">
+          <img
+            class="gallery-image"
+            src="/evoplay3/assets/picture1-ab3ce63f.png"
+            srcset="./img/gallery/picture1.png, ./img/gallery/picture1@2x.png"
+            alt="screenshot 1"
+            draggable="false"
+          />
+        </li>
+        <li class="swiper-slide gallery-list-item">
+          <img
+            class="gallery-image"
+            src="/evoplay3/assets/picture2-b76232fd.jpg"
+            srcset="/evoplay3/assets/picture2-b76232fd.jpg , /evoplay3/assets/picture2@2x-e0d026d9.jpg "
+            alt="screenshot 2"
+            draggable="false"
+          />
+        </li>
+        <li class="swiper-slide gallery-list-item">
+          <img
+            class="gallery-image"
+            src="/evoplay3/assets/picture3-83b6f8d3.jpg"
+            srcset="/evoplay3/assets/picture3-83b6f8d3.jpg , /evoplay3/assets/picture3@2x-3c238a09.jpg "
+            alt="screenshot 3"
+            draggable="false"
+          />
+        </li>
+        <li class="swiper-slide gallery-list-item">
+          <img
+            class="gallery-image"
+            src="/evoplay3/assets/picture4-b67c5ba8.jpg"
+            srcset="/evoplay3/assets/picture4-b67c5ba8.jpg , /evoplay3/assets/picture4@2x-59aadec7.jpg "
+            alt="screenshot 4"
+            draggable="false"
+          />
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- </div> -->
+  </div>
+</section>
+
     <section class="section" id="faq">
     <div class="container faq-container">
         <h2 class="faq-title">FAQ</h2>
@@ -196,8 +270,97 @@
     </div>
 </section>
     
-    
-    
+    <section class="about-section section" id="about-the-game">
+  <div class="about-main-container container">
+    <h1 class="about-title">About the Game</h1>
+    <div class="about-main-content">
+      <p class="about-desc">
+        Farm Sort Puzzle is a relaxing and challenging puzzle game where players
+        must sort and organize items on a vibrant farm. The goal is to clear
+        each level by sorting items into their correct locations. As you
+        progress, puzzles become more difficult, introducing new farm-related
+        items and obstacles that require careful planning and strategic
+        thinking. Perfect for puzzle enthusiasts and casual gamers alike, Farm
+        Sort Puzzle offers an engaging experience for all ages.
+      </p>
+      <img
+        class="about-image"
+        src="/evoplay3/assets/about-74b675da.png"
+        srcset="/evoplay3/assets/about-74b675da.png , /evoplay3/assets/about@2x-dc36f1fc.png "
+        alt="Farm Sort Puzzle Image"
+      />
+    </div>
+  </div>
+</section>
+
+    <section class="features-section section" id="features">
+  <div class="features-main-container container">
+    <h2 class="features-main-title">Features</h2>
+    <ul class="features-list">
+      <li>
+        <svg class="features-icons" width="24" height="24">
+          <use xlink:href="/evoplay3/assets/sprite-6879aedd.svg#icon-icon1" />
+        </svg>
+        <div>
+          <h4 class="features-title">Simple Yet Addictive Gameplay</h4>
+          <p class="features-desc">
+            Enjoy hours of fun with easy-to-learn gameplay that keeps you coming
+            back for more.
+          </p>
+        </div>
+      </li>
+      <li>
+        <svg class="features-icons" width="24" height="24">
+          <use xlink:href="/evoplay3/assets/sprite-6879aedd.svg#icon-icon2" />
+        </svg>
+        <div>
+          <h4 class="features-title">Challenging Puzzles</h4>
+          <p class="features-desc">
+            Overcome tricky farm-themed puzzles that get more complex with each
+            level.
+          </p>
+        </div>
+      </li>
+      <li>
+        <svg class="features-icons" width="24" height="24">
+          <use xlink:href="/evoplay3/assets/sprite-6879aedd.svg#icon-icon3" />
+        </svg>
+        <div>
+          <h4 class="features-title">Relaxing Farm Theme</h4>
+          <p class="features-desc">
+            Beautifully designed farm items and backgrounds create a calming and
+            enjoyable experience.
+          </p>
+        </div>
+      </li>
+      <li>
+        <svg class="features-icons" width="24" height="24">
+          <use xlink:href="/evoplay3/assets/sprite-6879aedd.svg#icon-icon4" />
+        </svg>
+        <div>
+          <h4 class="features-title">Endless Levels</h4>
+          <p class="features-desc">
+            With hundreds of puzzles, there’s always a new challenge waiting for
+            you.
+          </p>
+        </div>
+      </li>
+      <li>
+        <svg class="features-icons" width="24" height="24">
+          <use xlink:href="/evoplay3/assets/sprite-6879aedd.svg#icon-icon5" />
+        </svg>
+        <div>
+          <h4 class="features-title">Regular Updates</h4>
+          <p class="features-desc">
+            New puzzles and levels are added frequently to keep the gameplay
+            fresh and exciting.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
   </main>
 
   <footer class="footer section">
