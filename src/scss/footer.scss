@@ -16,9 +16,19 @@
   text-decoration-skip-ink: none;
   color: #fff;
   margin-bottom: 4px;
+  transition: color 250ms linear;
 }
 .footer-link {
   padding: 2px;
+  transition: color 250ms linear;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: rgba(169, 197, 98, 1);
+}
+.footer-item:hover,
+.footer-item:focus {
+  text-decoration-color: rgba(169, 197, 98, 1);
 }
 .footer-p {
   font-size: 12px;

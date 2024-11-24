@@ -27,8 +27,15 @@
   padding-left: 20px;
   margin-top: 16px;
 }
+.privacy-list-link {
+  color: rgba(137, 202, 186, 1);
+}
+.privacy-list-link a {
+  text-decoration: underline;
+}
 .privacy-list li::marker {
   font-size: 10px;
+  color: rgba(20, 20, 20, 1);
 }
 .privacy-text:last-of-type {
   padding-bottom: 20px;
