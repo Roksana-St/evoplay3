@@ -1,0 +1,81 @@
+.features-section {
+  @include media(desktop) {
+    background-image: url(../img/puzzle/green.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: bottom 140px left 110px;
+  }
+}
+
+.features-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+
+  @include media(desktop) {
+    padding-bottom: 40px;
+  }
+}
+
+.features-main-title {
+  font-family: 'Solway', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  @include media(desktop) {
+    line-height: 1.25;
+    font-size: 32px;
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 68px;
+  }
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  width: 284px;
+  padding: 8px;
+
+  @include media(desktop) {
+    gap: 34px;
+    align-items: flex-start;
+    padding: 16px;
+  }
+}
+
+.features-title {
+  font-family: 'Solway', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.features-desc {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}

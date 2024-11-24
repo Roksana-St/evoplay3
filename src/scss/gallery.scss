@@ -1,0 +1,172 @@
+@import 'swiper/swiper-bundle.css';
+
+.gallery {
+  height: 332px;
+  background-image: url(../img/puzzle/pink.png);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: top 102% right 1%;
+
+  @include media(desktop) {
+    height: 512px;
+    background-size: 100px 100px;
+    background-position: top 386px right 86px;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .gallery {
+    background-image: url(../img/puzzle/pink@2x.png);
+  }
+}
+
+//TODO maybe better to add fixed width
+.container-wrapper.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 292px;
+
+  @include media(desktop) {
+    height: 432px;
+  }
+}
+
+// gallery title
+.container-gallery-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-title {
+  font-family: 'Solway', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}
+
+//navigation's buttons
+.arrow-container {
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.button-prev,
+.button-next {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid $_main_color;
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+.swiper-button-disabled {
+  border: 1px solid #9b9b9b;
+  fill: #9b9b9b;
+  z-index: 0;
+}
+
+//swiper slide & image
+.swiper.swiper-one {
+  width: 284px;
+  z-index: 0;
+  height: 100%;
+
+  @include media(desktop) {
+    width: 900px;
+  }
+}
+
+.gallery-list.swiper-wrapper {
+  height: 220px;
+  width: 284px;
+  z-index: 1;
+
+  @include media(desktop) {
+    height: 300px;
+    width: 900px;
+  }
+}
+
+.swiper-slide.gallery-list-item {
+  border: 1px solid $_border_accent;
+  padding: 8px;
+  border-radius: 8px;
+  max-height: 220px;
+  z-index: 1;
+
+  @include media(desktop) {
+    max-height: 300px;
+    width: 180px;
+  }
+}
+
+.gallery-image {
+  height: 204px;
+
+  @include media(desktop) {
+    height: 286px;
+  }
+}
+
+//pagination
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 1px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: $_main_color;
+  border-radius: 50%;
+  transition: background-color 0.5s ease, width 0.5s ease;
+  z-index: 1;
+  opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $_main_color;
+  width: 16px;
+  height: 8px;
+  border-radius: 8px;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+//TODO can be use for custom pagination
+// .bulletActive {
+//   background-color: $_main_color;
+//   width: 16px;
+//   height: 8px;
+//   border-radius: 8px;
+//   transition: width 0.5s ease, height 0.5s ease;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .bullet {
+//   background-color: $_main_color;
+//   width: 8px;
+//   height: 8px;
+//   border-radius: 8px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
