@@ -4,10 +4,11 @@
   top: 20px;
   left: 50%;
   transform: translate(-50%);
-  width: 100%;
   padding: 0 18px;
   background-color: transparent;
   z-index: 100;
+  min-width: 320px;
+  width: 100%;
 
   &.scrolled {
     -webkit-backdrop-filter: blur(10px);
@@ -18,12 +19,15 @@
 
     @include media(desktop) {
       padding: 8px 58px;
+      max-width: 1200px;
     }
   }
 
   @include media(desktop) {
     width: 100%;
     padding: 0 58px;
+
+    max-width: 1200px;
   }
 }
 
@@ -132,8 +136,8 @@
   position: absolute;
   background: rgba(20, 20, 20, 0.4);
   width: 100vw;
-  height: 386px;
-  top: -25px;
+  height: 100vh;
+  top: 0;
   right: 0;
   display: flex;
   justify-content: flex-end;

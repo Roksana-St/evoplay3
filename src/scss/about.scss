@@ -3,20 +3,20 @@
   background-repeat: no-repeat;
   background-size: 40px 40px;
   background-position: top 16px right 34px;
+
   @include media(desktop) {
     background-image: none;
   }
 }
+
 //main container
 .about-main-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 600px;
+  margin: 0 auto;
 
   @include media(desktop) {
-    // TODO check it maybe better to change to static size
-    max-width: 100%;
     gap: 40px;
   }
 }
@@ -24,17 +24,17 @@
 //description container
 .about-main-content {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 4px;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
     border: 1px solid $_border_accent;
     background-color: $_white_color;
     border-radius: 8px;
-    height: 356px;
-    width: 1084px;
+    max-width: 1084px;
     align-items: center;
-    flex-direction: row;
     margin: 0 auto;
     padding: 16px;
     gap: 8px;
@@ -58,9 +58,18 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
+  width: 284px;
 
   @include media(desktop) {
     font-size: 24px;
     line-height: 1.33333;
+    width: 620px;
+  }
+}
+
+.about-image {
+  width: 284px;
+  @include media(desktop) {
+    width: 420px;
   }
 }

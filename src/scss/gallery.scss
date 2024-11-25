@@ -76,18 +76,22 @@
 
 //swiper slide & image
 .swiper.swiper-one {
-  width: 284px;
+  max-width: 282px;
   z-index: 0;
   height: 100%;
 
+  @include media(tablet) {
+    max-width: 400px;
+  }
+
   @include media(desktop) {
-    width: 900px;
+    max-width: 900px;
   }
 }
 
 .gallery-list.swiper-wrapper {
   height: 220px;
-  width: 284px;
+  max-width: 900px;
   z-index: 1;
 
   @include media(desktop) {
@@ -102,10 +106,11 @@
   border-radius: 8px;
   max-height: 220px;
   z-index: 1;
+  max-width: 132px;
 
   @include media(desktop) {
     max-height: 300px;
-    width: 180px;
+    max-width: 180px;
   }
 }
 
