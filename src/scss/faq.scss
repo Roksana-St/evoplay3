@@ -3,6 +3,22 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @include media(desktop) {
+    background-image: url(../img/puzzle/yellow.png), url(../img/puzzle/blue.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: top 30% left 6%, bottom 22% right 6%;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
+  @include media(desktop) {
+    .faq-container {
+      background-image: url(../img/puzzle/yellow@2x.png),
+        url(../img/puzzle/blue@2x.png);
+    }
+  }
 }
 
 .faq-title {

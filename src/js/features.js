@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const icon = item.querySelector('.features-icons');
     if (icon) {
       icon.style.backgroundColor = colors[index];
-      icon.style.padding = '4px';
       icon.style.borderRadius = '50%';
     }
   });
