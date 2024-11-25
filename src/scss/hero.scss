@@ -7,6 +7,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 20px;
+  max-width: 1200px;
 
   @include media(desktop) {
     padding-top: 180px;
@@ -30,7 +31,7 @@
 }
 
 // main container
-.hero-container {
+.hero-container.container {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -49,7 +50,7 @@
   display: flex;
   flex-direction: column-reverse;
   gap: 8px;
-  width: 268px;
+  min-width: 268px;
   height: 100%;
   justify-content: space-between;
 
