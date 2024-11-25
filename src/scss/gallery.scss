@@ -7,10 +7,15 @@
   background-size: 50px 50px;
   background-position: top 102% right 1%;
 
+  @include media(tablet) {
+    background-size: 70px 70px;
+    background-position: top 102% right 7%;
+  }
+
   @include media(desktop) {
     height: 512px;
     background-size: 100px 100px;
-    background-position: top 386px right 86px;
+    background-position: bottom 2px right 86px;
   }
 }
 
