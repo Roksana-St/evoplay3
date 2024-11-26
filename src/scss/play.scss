@@ -1,0 +1,113 @@
+.play-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.swiper.swiper-box {
+  width: 100%;
+  max-width: 284px;
+  z-index: 0;
+  height: 100%;
+  //   overflow: visible;
+}
+
+.button-pre,
+.button-nex {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid $_main_color;
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+.swiper-slide-virtual {
+  //   opacity: 0;
+  pointer-events: none;
+}
+
+.play-list.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  z-index: 1;
+}
+.play-item.swiper-slide {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 110px;
+  padding: 8px 10px;
+  width: 200px !important;
+  margin-right: 0 !important;
+  height: 350px;
+  background: #89caba;
+}
+
+.play-item-two.swiper-slide {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 110px;
+  padding: 8px 10px;
+  width: 200px !important;
+  margin-right: 0 !important;
+  height: 350px;
+  background: #fff788;
+}
+.play-item-three.swiper-slide {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 110px;
+  padding: 8px 10px;
+  width: 200px !important;
+  margin-right: 0 !important;
+  height: 350px;
+  background: #a9c562;
+}
+.play-item-four.swiper-slide {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 110px;
+  padding: 8px 10px;
+  width: 200px !important;
+  margin-right: 0 !important;
+  height: 350px;
+  background: #f2a7c0;
+}
+
+.play-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 180px;
+  height: 280px;
+}
+.play-box-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 100px;
+  padding: 20px;
+  width: 180px;
+  height: 180px;
+  background: #fff;
+}
+.play-item-up {
+  font-family: 'Solway', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+.icon-up {
+  width: 78px;
+  height: 58px;
+}
+.icon-up-next {
+  width: 90px;
+  height: 58px;
+}
