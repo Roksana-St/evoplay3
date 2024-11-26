@@ -1,26 +1,24 @@
-.features-section {
-  @include media(desktop) {
-    background-image: url(../img/puzzle/green.png);
-    background-repeat: no-repeat;
-    background-size: 100px 100px;
-    background-position: bottom 140px left 110px;
-  }
-}
-
-@media screen and (min-resolution: 2dppx) {
-  .gallery {
-    background-image: url(../img/puzzle/green@2x.png);
-  }
-}
-
 .features-main-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-bottom: 20px;
+  max-width: 1200px;
 
   @include media(desktop) {
     padding-bottom: 40px;
+    background-image: url(../img/puzzle/green.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: bottom 120px left 100px;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
+  @include media(desktop) {
+    .features-main-container {
+      background-image: url(../img/puzzle/green@2x.png);
+    }
   }
 }
 
@@ -38,14 +36,12 @@
 
 .features-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 16px;
   align-items: center;
   justify-content: center;
 
   @include media(desktop) {
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 68px;
   }
 }
@@ -54,12 +50,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 8px;
   width: 284px;
+  height: 138px;
   padding: 8px;
+  justify-content: space-between;
 
   @include media(desktop) {
-    gap: 34px;
+    width: 316px;
+    height: 206px;
     align-items: flex-start;
     padding: 16px;
   }
@@ -83,5 +81,25 @@
   @include media(desktop) {
     font-size: 16px;
     line-height: 1.25;
+  }
+}
+.features-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+
+  @include media(desktop) {
+    padding: 8px;
+  }
+}
+
+.features-desc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4;
+
+  @include media(desktop) {
+    gap: 8px;
   }
 }
