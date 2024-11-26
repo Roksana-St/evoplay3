@@ -1,7 +1,23 @@
-.play-container {
+.pl-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+.play-container {
+  @include media(desktop) {
+    background-image: url(../img/puzzle/orange.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: bottom 0% right 0%;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
+  @include media(desktop) {
+    .play-container {
+      background-image: url(../img/puzzle/orange@2x.png);
+    }
+  }
 }
 
 .swiper.swiper-box {
@@ -110,4 +126,88 @@
 .icon-up-next {
   width: 90px;
   height: 58px;
+}
+
+@media screen and (min-width: 1200px) {
+  .pl-container {
+    margin-bottom: 40px;
+  }
+  .swiper.swiper-box {
+    max-width: 1084px;
+    height: 640px;
+  }
+
+  .play-list.swiper-wrapper li:nth-child(odd) {
+    margin-top: auto;
+  }
+
+  .play-list.swiper-wrapper li:nth-child(even) {
+    margin-bottom: auto;
+  }
+
+  .play-title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+  .arrow-container {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .play-item.swiper-slide,
+  .play-item-two.swiper-slide,
+  .play-item-three.swiper-slide,
+  .play-item-four.swiper-slide {
+    border-radius: 140px;
+    padding: 8px;
+    width: 256px !important;
+    height: 440px;
+  }
+
+  .play-item-two.swiper-slide,
+  .play-item-four.swiper-slide {
+    display: block;
+  }
+
+  .play-item-text {
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 0 19px;
+  }
+  .play-box {
+    width: 240px;
+    height: 372px;
+  }
+  .play-item-two .play-box,
+  .play-item-four .play-box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .play-box-up {
+    border-radius: 120px;
+    padding: 38px;
+    width: 240px;
+    height: 240px;
+    // gap: 72px;
+  }
+  .play-item-up {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .icon-up {
+    width: 90px;
+    height: 68px;
+  }
+  .icon-up-next {
+    width: 112px;
+    height: 68px;
+  }
 }
