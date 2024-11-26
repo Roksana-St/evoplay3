@@ -73,6 +73,9 @@
   transform: rotate(45deg);
 }
 
+button .faq-btn.open {
+  display: block;
+}
 .faq-panel {
   display: none;
   overflow: hidden;
