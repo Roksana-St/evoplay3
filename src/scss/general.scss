@@ -26,10 +26,23 @@ h6 {
 }
 
 .container {
-  max-width: 1200px;
+  width: 320px;
   padding-left: 18px;
   padding-right: 18px;
   margin: 0 auto;
+}
+.animate {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 1200px) {

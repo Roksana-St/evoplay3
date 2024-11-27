@@ -36,13 +36,15 @@
 
 .features-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 16px;
   align-items: center;
   justify-content: center;
 
   @include media(desktop) {
     gap: 68px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 

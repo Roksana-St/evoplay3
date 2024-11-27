@@ -5,18 +5,18 @@
   background-image: url(../img/puzzle/pink.png);
   background-repeat: no-repeat;
   background-size: 50px 50px;
-  background-position: top 102% right 1%;
-
-  @include media(tablet) {
-    background-size: 70px 70px;
-    background-position: top 102% right 7%;
-  }
+  width: 320px;
+  margin: 0 auto;
+  background-position: top 102% right -1%;
 
   @include media(desktop) {
     height: 512px;
+    width: 1200px;
+
     background-size: 100px 100px;
     background-position: bottom 2px right 86px;
   }
+
 }
 
 @media screen and (min-resolution: 2dppx) {
@@ -84,10 +84,6 @@
   max-width: 282px;
   z-index: 0;
   height: 100%;
-
-  @include media(tablet) {
-    max-width: 400px;
-  }
 
   @include media(desktop) {
     max-width: 900px;
@@ -158,25 +154,3 @@
   border-radius: 8px;
   transition: width 0.5s ease, height 0.5s ease;
 }
-
-//TODO can be use for custom pagination
-// .bulletActive {
-//   background-color: $_main_color;
-//   width: 16px;
-//   height: 8px;
-//   border-radius: 8px;
-//   transition: width 0.5s ease, height 0.5s ease;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// .bullet {
-//   background-color: $_main_color;
-//   width: 8px;
-//   height: 8px;
-//   border-radius: 8px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }

@@ -11,13 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.classList.toggle('is-open');
     backdrop.classList.toggle('is-open');
 
-    // if (isOpen) {
-    //   window.scrollTo({
-    //     top: 0,
-    //     behavior: 'smooth',
-    //   });
-    // }
-
     body.style.overflow = isOpen ? 'hidden' : '';
   });
 
