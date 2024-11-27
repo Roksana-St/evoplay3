@@ -17,7 +17,7 @@
     padding-top: 180px;
     height: 800px;
     width: 1200px;
-    background-image: url(../img/wind.svg), url(../img/header/header.jpg);
+    background-image: url(../img/header/header.jpg);
     background-size: cover;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -51,10 +51,10 @@
 
 @keyframes rotateWindmill {
   0% {
-    transform: rotate(0deg); /* Початковий стан */
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg); /* Фінальний стан (повний оберт) */
+    transform: rotate(360deg); 
   }
 }
 
