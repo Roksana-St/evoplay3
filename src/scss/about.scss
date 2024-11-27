@@ -3,10 +3,14 @@
   background-repeat: no-repeat;
   background-size: 40px 40px;
   background-position: top 16px right 34px;
+  width: 320px;
+  margin: 0 auto;
 
   @include media(desktop) {
     background-image: none;
+    width: 1200px;
   }
+
 }
 
 //main container
@@ -24,7 +28,7 @@
 //description container
 .about-main-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 4px;
   justify-content: center;
   align-items: center;
@@ -33,6 +37,9 @@
     border: 1px solid $_border_accent;
     background-color: $_white_color;
     border-radius: 8px;
+    flex-wrap: wrap;
+    flex-direction: row;
+
     max-width: 1084px;
     align-items: center;
     margin: 0 auto;

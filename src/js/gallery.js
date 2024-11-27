@@ -37,10 +37,6 @@ export const swiper = new Swiper(swiperContainer, {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 16,
-    },
     1200: {
       slidesPerView: 4,
       spaceBetween: 60,
@@ -81,3 +77,35 @@ const prevObserver = new MutationObserver(mutations => {
 });
 
 prevObserver.observe(BUTTON_PREV, { attributes: true });
+
+const gallery = document.querySelector('.swiper-one');
+const about = document.querySelector('.about-main-content');
+const faq = document.querySelector('.faq-list');
+const howToPlay = document.querySelector('.swiper-box');
+const features = document.querySelector('.features-list');
+const hero = document.querySelector('.footer');
+
+const handleAnimation = entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+
+      entry.target.addEventListener(
+        'animationend',
+        () => {
+          entry.target.classList.remove('animate');
+        },
+        { once: true }
+      );
+    }
+  });
+};
+
+const observer = new IntersectionObserver(handleAnimation);
+
+observer.observe(gallery);
+observer.observe(about);
+observer.observe(faq);
+observer.observe(howToPlay);
+observer.observe(features);
+observer.observe(hero);
